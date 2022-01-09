@@ -1,22 +1,12 @@
-# einkommensteuer
+# Einkommensteuer rechner
 
-A Clojure library designed to ... well, that part is up to you.
+German tax system isn't the most simple one. In order to get one it's key taxes,
+namely income tax, I decided to implement the simple functions to have more
+interactive way to compute one.
 
-## Usage
-
-FIXME
+In order to check correctness the good calcularor was used
+https://www.steuertipps.de/service/rechner/einkommensteuer-rechner/
 
 ## License
 
-Copyright © 2022 FIXME
-
-This program and the accompanying materials are made available under the
-terms of the Eclipse Public License 2.0 which is available at
-http://www.eclipse.org/legal/epl-2.0.
-
-This Source Code may also be made available under the following Secondary
-Licenses when the conditions for such availability set forth in the Eclipse
-Public License, v. 2.0 are satisfied: GNU General Public License as published by
-the Free Software Foundation, either version 2 of the License, or (at your
-option) any later version, with the GNU Classpath Exception which is available
-at https://www.gnu.org/software/classpath/license.html.
+MIT
