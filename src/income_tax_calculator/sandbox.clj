@@ -1,12 +1,15 @@
-(ns income-tax-calculator.sandbox)
+(ns income-tax-calculator.sandbox
+  (:require [clojure.pprint :as pp]))
+
 
 (def discountData {:text  {:prefix "Up to"
-                            {:body} "$99"
-                            :suffix "disc"}
-                    :color "#000"})
+                           :body "$99"
+                           :suffix "disc"}
+                   :color "#000"})
 
 ;; Clojure:
-(assoc-in discountData [:text :body] "$10")
+(pp/pprint
+ (assoc-in discountData [:text :body] "$10"))
 
 ;; JavaScript:
 ;; export const discountData = {
@@ -14,3 +17,5 @@
 ;;   color: '#000',
 ;; }
 ;; {...discountData, text: {...discountData.text, body: "$10"}}
+
+(sort ["size" "title"])
