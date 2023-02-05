@@ -59,8 +59,8 @@
 (defn income-tax [income]
   (cond
     (<= income grundfreibetrag) (bracket1)
-    (< grundfreibetrag income 14926) (bracket2 income)
-    (< 16000 income 62809) (bracket3 income)
-    (< 62810 income 277825) (bracket4 income)
+    (< grundfreibetrag income 15999) (bracket2 income)
+    (<= 16000 income 62809) (bracket3 income)
+    (<= 62810 income 277825) (bracket4 income)
     :else
     (bracket5 income)))
