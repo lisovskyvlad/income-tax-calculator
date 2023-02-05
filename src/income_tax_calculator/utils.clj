@@ -1,6 +1,5 @@
 (ns income-tax-calculator.utils)
 
-; http://clojure-doc.org/articles/language/functions.html
 (defn round2
   "Round a double to the given precision (number of significant digits)"
   [precision d]
